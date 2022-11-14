@@ -7,7 +7,7 @@ interface Props {
   children?: React.ReactNode;
 }
 
-const Button = ({ bg, bgHover, onClick, children }: Props) => {
+function Button({ bg, bgHover, onClick, children }: Props) {
   return (
     <button
       onClick={onClick}
@@ -16,6 +16,6 @@ const Button = ({ bg, bgHover, onClick, children }: Props) => {
       {children}
     </button>
   );
-};
+}
 
 export default Button;
