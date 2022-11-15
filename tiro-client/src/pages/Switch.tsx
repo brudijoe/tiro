@@ -1,33 +1,32 @@
-import { BsMoon, BsMoonFill, BsSun, BsSunFill } from "react-icons/bs";
+import { useState } from "react";
+import { BsMoonFill, BsSunFill } from "react-icons/bs";
 import { IconContext } from "react-icons";
+import { DarkMode } from "../DarkMode";
 
 export function Switch() {
   const iconClass = "p-1";
 
+  const [darkMode, setDarkMode] = useState(true);
+
+  function handleClick() {
+    DarkMode();
+    setDarkMode(!darkMode);
+  }
+
   return (
-    <div className="m-1 h-10 w-20 flex flex-row items-center rounded-xl border-2 border-black dark:border-white dark:text-white">
-      <div className="w-3/6 flex justify-center">
-        <IconContext.Provider
-          value={{
-            color: "yellow",
-            size: "2em",
-            className: `${iconClass}`,
-          }}
-        >
-          <BsMoon />
-        </IconContext.Provider>
-      </div>
-      <div className="w-3/6 flex justify-center">
-        <IconContext.Provider
-          value={{
-            color: "yellow",
-            size: "2em",
-            className: `${iconClass}`,
-          }}
-        >
-          <BsSun />
-        </IconContext.Provider>
-      </div>
+    <div
+      onClick={handleClick}
+      className="m-1 w-20 bg-gray-600 flex justify-center items-center rounded-xl border-2 border-black dark:border-white"
+    >
+      <IconContext.Provider
+        value={{
+          color: "yellow",
+          size: "2em",
+          className: `${iconClass}`,
+        }}
+      >
+        {darkMode ? <BsSunFill /> : <BsMoonFill />}
+      </IconContext.Provider>
     </div>
   );
 }

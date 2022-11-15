@@ -1,7 +1,6 @@
 import React from "react";
 import Button from "./components/Button";
 import { Switch } from "./pages/Switch";
-import { DarkMode } from "./DarkMode";
 
 function App() {
   return (
@@ -16,9 +15,6 @@ function App() {
         onClick={() => console.log("Clicked on button")}
       />
       <Switch />
-      <button className="dark:text-white" onClick={DarkMode}>
-        Dunkelmodus
-      </button>
     </div>
   );
 }
