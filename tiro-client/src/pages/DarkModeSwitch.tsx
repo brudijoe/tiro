@@ -3,7 +3,7 @@ import { BsMoonFill, BsSunFill } from "react-icons/bs";
 import { IconContext } from "react-icons";
 import { DarkMode } from "../DarkMode";
 
-export function Switch() {
+export function DarkModeSwitch() {
   const iconClass = "p-1";
 
   const [darkMode, setDarkMode] = useState(true);
@@ -16,7 +16,7 @@ export function Switch() {
   return (
     <div
       onClick={handleClick}
-      className="m-1 w-20 bg-gray-600 flex justify-center items-center rounded-xl border-2 border-black dark:border-white"
+      className="m-1 w-20 bg-gray-600 flex justify-center items-center rounded-xl border-2 dark:border-white cursor-pointer hover:bg-gray-800"
     >
       <IconContext.Provider
         value={{
