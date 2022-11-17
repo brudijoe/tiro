@@ -1,15 +1,13 @@
 import { useState } from "react";
 import { BsMoonFill, BsSunFill } from "react-icons/bs";
 import { IconContext } from "react-icons";
-import { DarkMode } from "../DarkMode";
 
 export function DarkModeSwitch() {
+  const [darkMode, setDarkMode] = useState(true);
   const iconClass = "p-1";
 
-  const [darkMode, setDarkMode] = useState(true);
-
   function handleClick() {
-    DarkMode();
+    document.documentElement.classList.toggle("dark");
     setDarkMode(!darkMode);
   }
 
