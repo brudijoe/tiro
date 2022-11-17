@@ -1,0 +1,14 @@
+{
+    "german": {
+        "header": {
+            "new_task": "Neue Angewohnheit",
+            "statistic": "Statistik"
+        }
+    },
+    "english": {
+        "header": {
+            "new_task": "New Habit",
+            "statistic": "Statistic"
+        }
+    }
+}
