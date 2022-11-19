@@ -1,4 +1,4 @@
-# tori
+# tiro
 
 time management system
 
