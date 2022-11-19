@@ -1,14 +1,18 @@
 {
-    "german": {
-        "header": {
-            "new_task": "Neue Angewohnheit",
-            "statistic": "Statistik"
+    "languages": [
+        {
+            "languageName": "DE",
+            "header": {
+                "newTask": "Neue Angewohnheit",
+                "statistic": "Statistik"
+            }
+        },
+        {
+            "languageName": "EN",
+            "header": {
+                "newTask": "New Habit",
+                "statistic": "Statistic"
+            }
         }
-    },
-    "english": {
-        "header": {
-            "new_task": "New Habit",
-            "statistic": "Statistic"
-        }
-    }
+    ]
 }
