@@ -44,6 +44,7 @@
     ]
   },
   "devDependencies": {
+    "@playwright/test": "^1.28.0",
     "@types/ramda": "^0.28.20",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.19",
