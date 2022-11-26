@@ -1,16 +1,13 @@
 import { useRouteError } from "react-router-dom";
 
 export default function ErrorPage() {
-  const error = useRouteError();
+  const error: any = useRouteError();
 
-  // TODO Object is of type 'unknown'
   return (
-    <div id="error-page">
-      <h1>Oops!</h1>
-      <p>Sorry, an unexpected error has occurred.</p>
-      <p>
-        <i>{error.statusText || error.message}</i>
-      </p>
+    <div className="min-h-screen bg-red-200" id="error-page">
+      <div className="text-xl font-bold">Error Page</div>
+      <div>Error Text: {error.statusText}</div>
+      <div>Error: {error.status}</div>
     </div>
   );
 }

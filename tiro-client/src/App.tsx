@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <LanguageContextProvider value={{ selectedLanguage, changeLanguage }}>
-        <div className="bg-gray-100 dark:bg-gray-600 h-full min-h-screen">
+        <div className="bg-gray-100 dark:bg-gray-600 min-h-screen">
           <Header />
         </div>
       </LanguageContextProvider>
