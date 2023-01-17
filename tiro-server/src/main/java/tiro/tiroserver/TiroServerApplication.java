@@ -1,4 +1,4 @@
-package brudijoe.tiroserver;
+package tiro.tiroserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

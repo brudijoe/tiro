@@ -1,4 +1,4 @@
-package brudijoe.tiroserver;
+package tiro.tiroserver;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
