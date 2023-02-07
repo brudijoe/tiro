@@ -1,9 +1,13 @@
-package main.java.tiro.tiroserver.repository;
+package tiro.tiroserver.repository;
 
 import java.util.ArrayList;
 
-import main.java.tiro.tiroserver.model.Task;
+import tiro.tiroserver.model.Task;
 
+import java.util.List;
+import org.springframework.stereotype.Repository;
+
+@Repository
 public class TaskRepository {
 
     private List<Task> tasks = new ArrayList<>();

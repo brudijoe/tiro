@@ -1,7 +1,13 @@
-package main.java.tiro.tiroserver.service;
+package tiro.tiroserver.service;
 
-import main.java.tiro.tiroserver.repository.TaskRepository;
+import java.util.List;
 
+import tiro.tiroserver.repository.TaskRepository;
+import tiro.tiroserver.model.Task;
+
+import org.springframework.stereotype.Service;
+
+@Service
 public class TaskService {
 
     private final TaskRepository taskRepository;

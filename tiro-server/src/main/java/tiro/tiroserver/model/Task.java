@@ -1,4 +1,4 @@
-package main.java.tiro.tiroserver.model;
+package tiro.tiroserver.model;
 
 public class Task {
 
