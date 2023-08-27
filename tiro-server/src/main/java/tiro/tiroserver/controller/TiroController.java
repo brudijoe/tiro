@@ -7,7 +7,11 @@ import tiro.tiroserver.service.TaskService;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import jakarta.websocket.server.PathParam;
+
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -31,5 +35,10 @@ public class TiroController {
     @GetMapping("/tasks")
     public List<Task> getTasks() {
         return taskService.getTasks();
+    }
+
+    @PostMapping("/add/{taskName}")
+    public Task createTask(@PathParam taskName) {
+        return taskService.addTask(taskName);
     }
 }
